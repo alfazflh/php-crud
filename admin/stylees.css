@@ -1,0 +1,132 @@
+body {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.8)
+      ),
+      url("../header.png");
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.user {
+    max-width: 1300px;
+    margin: 50px auto;
+    background-color: #f8f8f8; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+    color: #282d34;
+    text-align: center;
+    font-size:50px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #282d34; 
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #282d34;
+    color: #fff;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2; 
+}
+
+.table tr:hover {
+    background-color: #ddd; 
+}
+
+.btn-log {
+    display: flex;
+    margin-inline: 300px;
+}
+
+.btn-hapus, .btn-update {
+    display: inline-block;
+    padding: 8px;
+    margin: 4px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.btn-hapus {
+    background-color: #FF0000; 
+    color: #fff;
+}
+
+.btn-update {
+    background-color: #217ecf; 
+    color: #fff;
+}
+
+nav {
+    position: relative;
+    background: #282d34;
+    font-weight: 1000;
+    display: flex;
+    width: 100%;
+  }
+  
+  nav .item {
+    font-size: 1.5rem;
+    padding: 0 20px;
+    cursor: pointer;
+    min-width: 13%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    text-decoration: none;
+    color: #f2f2f2;
+  }
+
+  .underline {
+    height: 4px;
+    background: #ffffff;
+    position: absolute;
+    bottom: 0;
+    width: 15%;
+    transition: 0.35s;
+  }
+
+  nav .item:nth-child(1):hover ~ .underline {
+    transform: translate(0, 0);
+  }
+  
+  nav .item:nth-child(2):hover ~ .underline {
+    transform: translate(100%, 0);
+  }
+  
+  nav .item:nth-child(3):hover ~ .underline {
+    transform: translate(200%, 0);
+  }
+  
+  nav .item:nth-child(4):hover ~ .underline {
+    transform: translate(300%, 0);
+  }
